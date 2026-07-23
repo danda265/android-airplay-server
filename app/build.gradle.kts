@@ -53,7 +53,8 @@ android {
 
     buildTypes {
         debug {
-            ndk { abiFilters += allAbis }
+            // builds de dev: só a ABI da TV alvo (armeabi-v7a) — CI mais rápida
+            ndk { abiFilters += "armeabi-v7a" }
         }
         release {
             isMinifyEnabled = true
