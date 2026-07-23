@@ -10,3 +10,6 @@
 .cxx/
 
 *.jks
+
+# APKs baixados do CI (nunca commitar binarios grandes)
+_artifacts/
